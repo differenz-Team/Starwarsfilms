@@ -22,8 +22,6 @@ struct ListView: View {
                     } label: {
                         ListCell(homeScreenModel:self.$arrHomeScreenData[i])
                     }
-
-                        
                 }
             }
         }

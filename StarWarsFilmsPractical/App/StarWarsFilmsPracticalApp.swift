@@ -29,20 +29,7 @@ struct StarWarsFilmsPracticalApp: App {
                     }
                 }
                 .alert(isPresented: self.$showAlert) {
-                    if self.alert.isLogOut {
-                        return Alert(title: Text(self.alert.title), message: Text(self.alert.message), primaryButton: self.alert.primaryButton, secondaryButton: .default(Text("Yes")) {
-                        })
-                    } else {
-                        if self.alert.message == "Authentication token has expired." {
-                            return Alert(
-                                title: Text(self.alert.title), message: Text(self.alert.message),
-                                dismissButton: .default(Text("OK"), action: {
-                                })
-                            )
-                        } else {
-                            return Alert(title: Text(self.alert.title), message: Text(self.alert.message), dismissButton: self.alert.dismissButton)
-                        }
-                    }
+                    return Alert(title: Text(self.alert.title), message: Text(self.alert.message), dismissButton: self.alert.dismissButton)
                 }
         }
     }

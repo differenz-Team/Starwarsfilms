@@ -10,7 +10,6 @@ import Foundation
 struct IdentifiableKeys {
     //MARK: - Assets Image name
     struct ImageName {
-        static let kAvatar                                      = "Avatar"
         static let kPerson                                      = "person.circle"
     }
 }

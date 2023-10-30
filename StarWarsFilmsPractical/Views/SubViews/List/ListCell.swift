@@ -13,9 +13,7 @@ struct ListCell: View {
     @Binding var homeScreenModel: AllFilmsQuery.Data.AllFilms.Film?
     var body: some View {
         ZStack(alignment: .leading) {
-            
             Color.appSnippetsColor
-            
             HStack {
                 VStack(alignment: .leading) {
                     Text(self.homeScreenModel?.title ?? "")
