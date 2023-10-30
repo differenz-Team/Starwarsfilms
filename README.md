@@ -33,9 +33,9 @@ The app does the following:
 
 
 ## Screenshots
-<img src="https://github.com/differenz-Team/Starwarsfilms/blob/master/ScreenShots/HomeScreen.png" width="280">
-<img src="https://github.com/differenz-Team/Starwarsfilms/blob/master/ScreenShots/HomeScreen-Dark.png" width="280"> 
-<img src="https://github.com/differenz-Team/Starwarsfilms/blob/master/ScreenShots/FilmDetailScreen.png" width="280">
-<img src="https://github.com/differenz-Team/Starwarsfilms/blob/master/ScreenShots/FilmDetailScreen-Dark.png" width="280">
+<img src="https://github.com/differenz-Team/Starwarsfilms/blob/main/ScreenShots/HomeScreen.png" width="280">
+<img src="https://github.com/differenz-Team/Starwarsfilms/blob/main/ScreenShots/HomeScreen-Dark.png" width="280"> 
+<img src="https://github.com/differenz-Team/Starwarsfilms/blob/main/ScreenShots/FilmDetailScreen.png" width="280">
+<img src="https://github.com/differenz-Team/Starwarsfilms/blob/main/ScreenShots/FilmDetailScreen-Dark.png" width="280">
 
 Happy coding!
