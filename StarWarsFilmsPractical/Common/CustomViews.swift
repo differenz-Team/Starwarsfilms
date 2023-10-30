@@ -61,32 +61,28 @@ extension View {
 }
 
 extension Alert {
-    static func show(title: String = "", message: String = "", isLogOut: Bool = false) {
-        NotificationCenter.default.post(name: .showAlert, object: AlertData(title: title, message: message, isLogOut: isLogOut))
+    static func show(title: String = "", message: String = "") {
+        NotificationCenter.default.post(name: .showAlert, object: AlertData(title: title, message: message))
     }
 }
 
 // MARK: - AlertData
 class AlertData {
     
-    static var empty = AlertData(title: "Sample", message: "Empty", isLogOut: false)
+    static var empty = AlertData(title: "Sample", message: "Empty")
     
     var title: String
     var message: String
-    var isLogOut: Bool
     
     private(set) var dismissButton: Alert.Button = .default(Text("OK"))
     private(set) var secondaryButton: Alert.Button = .default(Text("Yes"))
     private(set) var primaryButton: Alert.Button = .default(Text("No"))
     
-    init(title: String, message: String, isLogOut: Bool) {
+    init(title: String, message: String) {
         self.title = title
         self.message = message
-        self.isLogOut = isLogOut
         
-        if isLogOut {
-            self.dismissButton = .default(Text("OK")) {
-            }
+        self.dismissButton = .default(Text("OK")) {
         }
         
         self.secondaryButton = .default(Text("Yes")) {

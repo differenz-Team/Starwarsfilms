@@ -43,7 +43,7 @@ extension HomeViewModel {
                     
                 case .failure(let error):
                     self.lblNoDataFoundHidden = true
-                    Alert.show(title: "", message: ResponseErrors.kBadRequestError, isLogOut: false)
+                    Alert.show(title: "", message: ResponseErrors.kBadRequestError)
                     print("Failure! Error: \(error)")
             }
         }

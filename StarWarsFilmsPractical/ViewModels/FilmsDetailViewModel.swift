@@ -30,12 +30,12 @@ extension FilmsDetailViewModel {
                     self.filmDetail = graphQLResult.data?.film
                     self.isDataLoading = false
                     if self.filmDetail == nil {
-                        Alert.show(title: "", message: ResponseErrors.kBadRequestError, isLogOut: false)
+                        Alert.show(title: "", message: ResponseErrors.kBadRequestError)
                     }
 
                 case .failure(let error):
                     self.lblNoDataFoundHidden = true
-                    Alert.show(title: "", message: ResponseErrors.kBadRequestError, isLogOut: false)
+                    Alert.show(title: "", message: ResponseErrors.kBadRequestError)
                     print("Failure! Error: \(error)")
             }
         }
